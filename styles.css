@@ -148,7 +148,10 @@ section {
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas muy grandes */
         margin: 40px auto; /* Aumenta el espaciado superior e inferior */
-      }
+        background-size: cover; /* Ajusta el tamaño del fondo */
+        background-position: center; /* Centra el fondo */
+        animation: fondo-dinamico 10s infinite; /* Agrega la animación de fondo dinámico */
+    }
     
       .fecha-evento {
         font-size: 36px; /* Aumenta el tamaño de fuente */
@@ -205,7 +208,10 @@ section {
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas grandes */
         margin: 30px auto; /* Aumenta el espaciado superior e inferior */
-      }
+        background-size: cover; /* Ajusta el tamaño del fondo */
+        background-position: center; /* Centra el fondo */
+        animation: fondo-dinamico 10s infinite; /* Agrega la animación de fondo dinámico */
+    }
     
       .fecha-evento {
         font-size: 30px; /* Aumenta el tamaño de fuente */
@@ -263,7 +269,10 @@ section {
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas medianas */
         margin: 15px auto; /* Reduce el espaciado superior e inferior */
-      }
+        background-size: cover; /* Ajusta el tamaño del fondo */
+        background-position: center; /* Centra el fondo */
+        animation: fondo-dinamico 10s infinite; /* Agrega la animación de fondo dinámico */
+    }
     
       .fecha-evento {
         font-size: 24px; /* Reduce el tamaño de fuente */
@@ -322,9 +331,12 @@ section {
 
     /*Frase*/
     #inicio {
-        width: 80%;; /* Ajusta el ancho para pantallas pequeñas */
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
         margin: 10px auto; /* Reduce el espaciado superior e inferior */
-      }
+        background-size: cover; /* Ajusta el tamaño del fondo */
+        background-position: center; /* Centra el fondo */
+        animation: fondo-dinamico 10s infinite; /* Agrega la animación de fondo dinámico */
+    }
     
       .fecha-evento {
         font-size: 20px; /* Reduce el tamaño de fuente */
