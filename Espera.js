@@ -1,3 +1,3 @@
 setTimeout(() => {
-           window.location.href = 'Inicio.html';
+           window.location.href = 'Principal.html';
        }, 2000);
