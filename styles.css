@@ -36,8 +36,9 @@ body {
 /* Pantallas pequeñas */
 @media (max-width: 479px) {
     body {
-        animation: fondo-dinamico 4s infinite alternate;
-        background-size: cover;
+        animation: fondo-dinamico 2s infinite alternate;
+        background-size: 80%;
+        background-position: center;
         
 }
 
