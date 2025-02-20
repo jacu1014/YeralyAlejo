@@ -24,7 +24,7 @@ body {
         background-position: center;
     }
     75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.png');
+        background-image: url('Fotos/Fondo_Index2.jpg');
         background-position: center;
     }
 }
@@ -177,6 +177,17 @@ section {
       .linea {
         margin: 30px 0; /* Ajusta el espaciado entre las líneas */
       }
+      /* Animación de fondo dinámico */
+@keyframes fondo-dinamico {
+    0%, 50% {
+        background-image: url('Fotos/Fondo_Index.jpg');
+        background-position: center;
+    }
+    75%, 100% {
+        background-image: url('Fotos/Fondo_Index2.jpg');
+        background-position: center;
+    }
+}
 }
 
 /* Estilos para pantalla mediana (Tablet) */
@@ -237,6 +248,17 @@ section {
       .linea {
         margin: 20px 0; /* Ajusta el espaciado entre las líneas */
       }
+      /* Animación de fondo dinámico */
+@keyframes fondo-dinamico {
+    0%, 50% {
+        background-image: url('Fotos/Fondo_Index.jpg');
+        background-position: center;
+    }
+    75%, 100% {
+        background-image: url('Fotos/Fondo_Index2.jpg');
+        background-position: center;
+    }
+}
 
 }
 
@@ -298,6 +320,17 @@ section {
       .linea {
         margin: 10px 0; /* Ajusta el espaciado entre las líneas */
       }
+      /* Animación de fondo dinámico */
+@keyframes fondo-dinamico {
+    0%, 50% {
+        background-image: url('Fotos/Fondo_Index.jpg');
+        background-position: center;
+    }
+    75%, 100% {
+        background-image: url('Fotos/Fondo_Index2.jpg');
+        background-position: center;
+    }
+}
 }
 
 /* Estilos para pantalla extra pequeña (Móvil pequeño) */
@@ -353,6 +386,17 @@ section {
       .flecha-img {
         width: 30px; /* Reduce el tamaño de la flecha */
       }
+      /* Animación de fondo dinámico */
+@keyframes fondo-dinamico {
+    0%, 50% {
+        background-image: url('Fotos/Fondo_Index.jpg');
+        background-position: center;
+    }
+    75%, 100% {
+        background-image: url('Fotos/Fondo_Index2.jpg');
+        background-position: center;
+    }
+}
 }
 
 /* Estilos de la galería de fotos */
