@@ -130,7 +130,7 @@ section {
         font-size: 18px;
         background-size: 100% 100%;
     }
-    .container {
+  .container {
         width: 80%;
         margin: 0 auto;
     }
@@ -178,16 +178,7 @@ section {
         margin: 30px 0; /* Ajusta el espaciado entre las líneas */
       }
       /* Animación de fondo dinámico */
-@keyframes fondo-dinamico {
-    0%, 50% {
-        background-image: url('Fotos/Fondo_Index.jpg');
-        background-position: center;
-    }
-    75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.jpg');
-        background-position: center;
-    }
-}
+
 }
 
 /* Estilos para pantalla mediana (Tablet) */
@@ -196,6 +187,7 @@ section {
         font-size: 16px;
         background-size: 100% 100%;
     }
+    
     .container {
         width: 90%;
         margin: 0 auto;
@@ -249,16 +241,7 @@ section {
         margin: 20px 0; /* Ajusta el espaciado entre las líneas */
       }
       /* Animación de fondo dinámico */
-@keyframes fondo-dinamico {
-    0%, 50% {
-        background-image: url('Fotos/Fondo_Index.jpg');
-        background-position: center;
-    }
-    75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.jpg');
-        background-position: center;
-    }
-}
+
 
 }
 
@@ -321,16 +304,7 @@ section {
         margin: 10px 0; /* Ajusta el espaciado entre las líneas */
       }
       /* Animación de fondo dinámico */
-@keyframes fondo-dinamico {
-    0%, 50% {
-        background-image: url('Fotos/Fondo_Index.jpg');
-        background-position: center;
-    }
-    75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.jpg');
-        background-position: center;
-    }
-}
+
 }
 
 /* Estilos para pantalla extra pequeña (Móvil pequeño) */
@@ -340,6 +314,8 @@ section {
         background-size: 100% 100%;
         animation: none;
     }
+
+  
     .container {
         width: 100%;
         margin: 0;
@@ -387,16 +363,7 @@ section {
         width: 30px; /* Reduce el tamaño de la flecha */
       }
       /* Animación de fondo dinámico */
-@keyframes fondo-dinamico {
-    0%, 50% {
-        background-image: url('Fotos/Fondo_Index.jpg');
-        background-position: center;
-    }
-    75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.jpg');
-        background-position: center;
-    }
-}
+
 }
 
 /* Estilos de la galería de fotos */
