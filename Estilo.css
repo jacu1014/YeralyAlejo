@@ -1,0 +1,97 @@
+/* Paleta de colores */
+:root {
+    --negro: #0A0A0A;
+    --blanco: #FFFFFF;
+    --azul-electrico: #007BFF;
+    --gris-oscuro: #1E1E1E;
+    --celeste: #66C2FF;
+}
+
+/* Fondo con imagen de flores */
+body {
+    background: var(--negro) url('Fotos/Flores.svg') no-repeat center top; /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+    background-position: center top; /* Centrar la imagen en la parte superior */
+    color: var(--blanco);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: var(--gris-oscuro);
+    max-width: 90%; /* Se adapta a la pantalla */
+    width: 500px; /* Máximo tamaño */
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+}
+
+/* Estilos para H2 */
+h2 {
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--blanco);
+}
+
+/* Estilos para H1 */
+h1 {
+    font-family: "Dancing Script", serif;
+    font-size: 60px;
+    color: var(--azul-electrico);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botón estilizado */
+.button {
+  display: inline-block;
+  padding: 10px 100px;
+  background-color: var(--azul-electrico);
+  color: var(--blanco);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+}
+
+/* Efecto hover en botón */
+.button:hover {
+      background-color: var(--celeste);
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+        margin-top: 20px; /* Ajusta el margen superior si es necesario */
+    }
+
+    h1 {
+        font-size: 45px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
