@@ -77,3 +77,16 @@ body {
     margin-top: 18px;
   }
 }
+
+/* Media query para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {
+  .imagen-espera {
+    max-width: 100px; /* Ajusta el ancho máximo aquí */
+    height: auto;
+  }
+  
+  .imagen-espera_1 {
+    max-width: 100px; /* Ajusta el ancho máximo aquí */
+    height: auto;
+  }
+}
