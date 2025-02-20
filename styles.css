@@ -1,4 +1,4 @@
-
+/* Definición de variables de color */
 :root {
     --negro: #0A0A0A;
     --blanco: #FFFFFF;
@@ -6,15 +6,17 @@
     --gris-oscuro: #1E1E1E;
     --celeste: #66C2FF;
 }
+
+/* Estilos generales */
+
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
     color: var(--blanco);
     background: var(--negro);
-    animation: fondo-dinamico 10s infinite alternate;
     background-size: 100%;
-    animation: fondo-dinamico 6s infinite alternate; /* 3 segundos entre cada imagen */
 }
+
 
 /* Animación de fondo dinámico */
 @keyframes fondo-dinamico {
@@ -27,39 +29,169 @@ body {
         background-position: center;
     }
 }
+
+/* Media queries */
+
 /* Pantallas pequeñas */
 @media (max-width: 479px) {
     body {
-        font-size: 14px; /* Ajusta el tamaño de fuente */
-        background-size: 150%; /* Ajusta el tamaño de fondo */
-        animation-duration: 4s; /* Ajusta la duración de la animación */
+        font-size: 14px;
+        animation: fondo-dinamico 4s infinite alternate;
+        background-size: 150%;
     }
- }
+    #inicio {
+        width: 90%;
+        margin: 10px auto;
+    }
+    #cuenta-regresiva {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #links {
+        width: 90%;
+        margin: 10px auto;
+    }
+    #fotos_titulo {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #fotos-tarjeta {
+        width: 90%;
+        margin: 10px auto;
+    }
+    #Tips {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #regalos {
+        width: 90%;
+        margin: 10px auto;
+    }
+    #compartir-fotos {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
 
 /* Pantallas medianas */
-@media (min-width: 480px) and (max-width: 767px) { 
+@media (min-width: 480px) and (max-width: 767px) {
     body {
-        font-size: 18px; /* Ajusta el tamaño de fuente */
-        background-size: 100%; /* Ajusta el tamaño de fondo */
-        animation-duration: 6s; /* Ajusta la duración de la animación */
+        font-size: 16px;
+        animation: fondo-dinamico 6s infinite alternate;
+        background-size: 120%;
+    }
+    #inicio {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #cuenta-regresiva {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #links {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #fotos_titulo {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #fotos-tarjeta {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #Tips {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #regalos {
+        width: 80%;
+        margin: 20px auto;
+    }
+    #compartir-fotos {
+        width: 70%;
+        margin: 30px auto;
     }
 }
 
 /* Pantallas grandes */
 @media (min-width: 768px) and (max-width: 1199px) {
     body {
-        font-size: 18px; /* Ajusta el tamaño de fuente */
-        background-size: 100%; /* Ajusta el tamaño de fondo */
-        animation-duration: 6s; /* Ajusta la duración de la animación */
+        font-size: 18px;
+        animation: fondo-dinamico 8s infinite alternate;
+        background-size: 100%;
     }
- }
+    #inicio {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #cuenta-regresiva {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #links {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #fotos_titulo {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #fotos-tarjeta {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #Tips {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #regalos {
+        width: 70%;
+        margin: 30px auto;
+    }
+    #compartir-fotos {
+        width: 60%;
+        margin: 40px auto;
+    }
+}
 
 /* Pantallas muy grandes */
 @media (min-width: 1200px) {
     body {
-        font-size: 20px; /* Ajusta el tamaño de fuente */
-        background-size: 80%; /* Ajusta el tamaño de fondo */
-        animation-duration: 7s; /* Ajusta la duración de la animación */
+        font-size: 20px;
+        animation: fondo-dinamico 10s infinite alternate;
+        background-size: 80%;
     }
-
- }
+    #inicio {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #cuenta-regresiva {
+        width: 50%;
+        margin: 50px auto;
+    }
+    #links {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #fotos_titulo {
+        width: 50%;
+        margin: 50px auto;
+    }
+    #fotos-tarjeta {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #Tips {
+        width: 50%;
+        margin: 50px auto;
+    }
+    #regalos {
+        width: 60%;
+        margin: 40px auto;
+    }
+    #compartir-fotos {
+        width: 50%;
+        margin: 50px auto;
+    }
+}
