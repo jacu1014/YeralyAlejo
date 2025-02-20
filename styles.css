@@ -379,7 +379,15 @@ html, body {
 #links {
     text-align: center;
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
+    
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px !important;
+    margin: -10px!important;
 }
 
     }
