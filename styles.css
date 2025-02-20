@@ -376,52 +376,6 @@ html, body {
 
 /*Tarjetas*/
 
-#links {
-    text-align: center;
-    width: 90%;
-    justify-content: center;
-    
-    
-}
-.contenedor-tarjetas {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-  }
-
-.tarjeta {
-    width: 250px;
-    height: 300px;
-    margin: 100px;
-    
-}
-
-
-.tarjeta-inner {
-    transform-style: preserve-3d;
-  }
-
-  .tarjeta:hover .tarjeta-inner {
-    transform: rotateY(180deg);
-  }
-
-.tarjeta-front h1 {
-    font-size: 24px;
-    padding: 20px 30px;
-}
-
-.tarjeta-back h2 {
-    font-size: 20px;
-}
-
-.tarjeta-back p {
-    font-size: 14px;
-}
-
-.boton {
-    padding: 8px 40px;
-    font-size: 14px;
-}
 
     }
 
