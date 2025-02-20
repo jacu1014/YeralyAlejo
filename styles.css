@@ -475,10 +475,18 @@ html, body {
 
     /*Tarjeta*/
     .contenedor-tarjetas {
+<<<<<<< HEAD
         flex-direction: column !important;
         align-items: center !important;
         justify-content: flex-start !important;
       }
+=======
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto; /* Agrega esto */
+      } 
+>>>>>>> 5c6bb4e2b7bcb9b26c3f6e1fdbb8eeb8e3a9f55a
     
     .tarjeta {
         width: 280px;
