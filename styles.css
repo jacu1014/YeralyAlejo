@@ -374,16 +374,10 @@ html, body {
     width: 20%;
 }
 
-.contenedor-tarjetas {
-    gap: 20px;
-}
-
+/*Tarjetas*/
 .tarjeta {
-    width: 200px;
-    height: 250px;
-    position: center;
-    margin-bottom: 50px;
-    margin-left: -50px;
+    width: 250px;
+    height: 300px;
 }
 
 .tarjeta-front h1 {
@@ -399,6 +393,10 @@ html, body {
     font-size: 14px;
 }
 
+.boton {
+    padding: 8px 40px;
+    font-size: 14px;
+}
 
     }
 
@@ -458,28 +456,27 @@ html, body {
         width: 25%;
     }
 
-    .contenedor-tarjetas {
-        gap: 30px;
-    }
-    
+    /*Tarjeta*/
     .tarjeta {
-        width: 250px;
-        height: 300px;
-        position: center;
-        margin-bottom: 50px;
-        margin-left: -50px;
+        width: 280px;
+        height: 330px;
     }
     
     .tarjeta-front h1 {
-        font-size: 28px;
+        font-size: 26px;
         padding: 25px 40px;
     }
     
     .tarjeta-back h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .tarjeta-back p {
+        font-size: 16px;
+    }
+    
+    .boton {
+        padding: 10px 50px;
         font-size: 16px;
     }
 
@@ -541,26 +538,31 @@ html, body {
         width: 30%;
     }
 
+    /*Tarjeta*/
     .contenedor-tarjetas {
-        gap: 40px;
+        gap: 100px;
     }
     
     .tarjeta {
         width: 300px;
         height: 350px;
-        margin-right: 100px;
     }
     
     .tarjeta-front h1 {
-        font-size: 32px;
+        font-size: 28px;
         padding: 30px 50px;
     }
     
     .tarjeta-back h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
     
     .tarjeta-back p {
+        font-size: 18px;
+    }
+    
+    .boton {
+        padding: 12px 60px;
         font-size: 18px;
     }
 
@@ -622,26 +624,31 @@ html, body {
         width: 35%;
     }
 
+    /*Tarjeta*/
     .contenedor-tarjetas {
-        gap: 50px;
+        gap: 150px;
     }
     
     .tarjeta {
-        width: 350px;
-        height: 400px;
-        margin-right: 100px;
+        width: 320px;
+        height: 370px;
     }
     
     .tarjeta-front h1 {
-        font-size: 36px;
+        font-size: 30px;
         padding: 35px 60px;
     }
     
     .tarjeta-back h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
     
     .tarjeta-back p {
+        font-size: 20px;
+    }
+    
+    .boton {
+        padding: 15px 70px;
         font-size: 20px;
     }
 
