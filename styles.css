@@ -258,7 +258,7 @@ section {
 /* Animación del título */
 @keyframes wave {
     0% {
-        background-position: center;
+        background-position: calc(50% + 10px) center;
         transform: translateY(0);
     }
     50% {
@@ -266,7 +266,7 @@ section {
         transform: translateY(0);
     }
     100% {
-        background-position: center;
+        background-position: calc(50% + 10px) center;
         transform: translateY(0);
     }
 }
@@ -562,13 +562,10 @@ html, body {
         font-size: 18px;
     }
     
-    .boton {
-        padding: 5px 30px; /* Reduce el tamaño del botón */
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%); /* Centra el botón horizontalmente */
-      }
+    boton {
+        padding: 10px 50px;
+        font-size: 18px;
+    }
 
 }
 
@@ -652,12 +649,9 @@ html, body {
     }
     
     .boton {
-        padding: 5px 30px; /* Reduce el tamaño del botón */
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%); /* Centra el botón horizontalmente */
-      }
+        padding: 10px 50px;
+        font-size: 18px;
+    }
     
 
 
