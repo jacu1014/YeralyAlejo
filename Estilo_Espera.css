@@ -44,17 +44,17 @@ body {
 /* Media query para pantallas grandes (más de 800px) */
 @media (min-width: 800px) {
   .imagen-espera {
-    max-width: 150px; /* Ajusta el ancho máximo aquí */
+    max-width: 100px; /* Reduce el tamaño de la imagen */
     height: auto;
   }
   
   .imagen-espera_1 {
-    max-width: 400px; /* Ajusta el ancho máximo aquí */
+    max-width: 300px; /* Reduce el tamaño de la imagen */
     height: auto;
   }
 
   .texto-espera {
-    font-size: 100px; /* Sobreescribe el tamaño de fuente por defecto */
+    font-size: 100px !important; /* Utiliza !important para forzar el cambio de tamaño */
     margin-top: 100px;
   }
 }
