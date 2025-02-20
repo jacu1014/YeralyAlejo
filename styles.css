@@ -52,7 +52,7 @@ html, body {
 @media (min-width: 480px) and (max-width: 767px) {
     body {
         animation: fondo-dinamico 6s infinite alternate;
-        background-size: cover%;
+        background-size: cover;
         
     }
     html, body {
@@ -66,7 +66,7 @@ html, body {
 @media (min-width: 768px) and (max-width: 1199px) {
     body {
         animation: fondo-dinamico 8s infinite alternate;
-        background-size: cover;
+        background-size: 100%;
         
     }
     html, body {
@@ -85,7 +85,7 @@ html, body {
     }
     html, body {
         overflow-x: hidden;
-        max-width: cover;
+        max-width: 100%;
     }
 
 }
