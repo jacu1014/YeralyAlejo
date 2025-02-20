@@ -375,10 +375,26 @@ html, body {
 }
 
 /*Tarjetas*/
+
+.contenedor-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
 .tarjeta {
     width: 250px;
     height: 300px;
+    margin-bottom: 20px;
 }
+
+
+.tarjeta-inner {
+    transform-style: preserve-3d;
+  }
+
+  .tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg);
+  }
 
 .tarjeta-front h1 {
     font-size: 24px;
@@ -457,12 +473,28 @@ html, body {
     }
 
     /*Tarjeta*/
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+      }
+    
     .tarjeta {
         width: 280px;
         height: 330px;
         margin-left: 10px; /* Ajusta el margen según sea necesario */
+        margin-bottom: 20px;
     }
     
+    
+    .tarjeta-inner {
+        transform-style: preserve-3d;
+      }
+    
+      .tarjeta:hover .tarjeta-inner {
+        transform: rotateY(180deg);
+      }
+
+      
     .tarjeta-front h1 {
         font-size: 26px;
         padding: 25px 40px;
@@ -652,7 +684,5 @@ html, body {
         padding: 10px 50px;
         font-size: 18px;
     }
-    
-
 
 }
