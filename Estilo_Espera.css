@@ -78,15 +78,15 @@ body {
   }
 }
 
-/* Media query para pantallas grandes (más de 1200px) */
+/* Media query para pantallas grandes (más de 800px) */
 @media (min-width: 800px) {
   .imagen-espera {
-    max-width: 50px; /* Ajusta el ancho máximo aquí */
+    max-width: 100px; /* Ajusta el ancho máximo aquí */
     height: auto;
   }
   
   .imagen-espera_1 {
-    max-width: 50px; /* Ajusta el ancho máximo aquí */
+    max-width: 100px; /* Ajusta el ancho máximo aquí */
     height: auto;
   }
 }
