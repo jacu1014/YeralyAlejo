@@ -51,6 +51,11 @@ body {
     max-width: 600px; /* Ajusta el ancho máximo aquí */
     height: auto;
   }
+
+  .texto-espera {
+    font-size: 36px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 36px !important;
+  }
 }
 
 /* Media query para pantallas pequeñas (menos de 768px) */
