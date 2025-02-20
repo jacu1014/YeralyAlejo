@@ -12,13 +12,13 @@ body {
 }
 
 .imagen-espera {
-  max-width: 25%;
+  max-width: 15%;
   height: auto;
   animation: latido 1s infinite;
 }
 
 .imagen-espera_1 {
-  max-width: 25%;
+  max-width: 15%;
   height: auto;
   animation: latido 1s infinite;
 }
@@ -45,12 +45,12 @@ body {
 /* Media query para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
   .imagen-espera {
-    width: 25%;
+    max-width: 20%;
     height: auto;
   }
   
   .imagen-espera_1 {
-    width: 25%;
+    max-width: 20%;
     height: auto;
   }
   
@@ -63,12 +63,12 @@ body {
 /* Media query para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
   .imagen-espera {
-    width: 25%;
+    max-width: 25%;
     height: auto;
   }
   
   .imagen-espera_1 {
-    width: 25%;
+    max-width: 25%;
     height: auto;
   }
   
