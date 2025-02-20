@@ -321,7 +321,7 @@ section {
     }
 
     #inicio {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        width: 80%;; /* Ajusta el ancho para pantallas pequeñas */
         margin: 10px auto; /* Reduce el espaciado superior e inferior */
       }
     
