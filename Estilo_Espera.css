@@ -79,7 +79,7 @@ body {
 }
 
 /* Media query para pantallas grandes (más de 1200px) */
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .imagen-espera {
     max-width: 50px; /* Ajusta el ancho máximo aquí */
     height: auto;
