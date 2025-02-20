@@ -31,6 +31,82 @@ body {
     }
 }
 
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la sección de inicio */
+#inicio {
+    width: 70%; /* Establece el ancho de la sección al 70% */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+    text-align: center; /* Centra el contenido */
+}
+
+.fecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.linea {
+    flex: 1; /* Hace que las líneas ocupen el espacio disponible */
+    border: 0;
+    border-top: 1px solid var(--blanco); /* Línea delgada blanca */
+    margin: 0 10px; /* Espaciado entre la línea y la fecha */
+}
+
+.fecha-evento {
+    font-family: 'Nunito', sans-serif; /* Tipo de letra Nunito */
+    font-size: 28px; /* Tamaño de fuente 28px */
+    color: var(--blanco); /* Color blanco */
+}
+
+.nombres {
+    font-family: 'Dancing Script', cursive; /* Tipo de letra Dancing Script */
+    font-size: 60px; /* Tamaño de fuente 60px */
+    color: var(--azul-electrico); /* Color azul eléctrico */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.frase-biblica {
+    font-family: 'Dancing Script', cursive; /* Tipo de letra Dancing Script */
+    font-size: 60px; /* Tamaño de fuente 60px */
+    color: var(--blanco); /* Color blanco */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.frase-biblica::before {
+    color: var(--azul-electrico); /* Color azul eléctrico */
+}
+
+.frase-biblica::after {
+    content: close-quote; /* Comillas de cierre */
+    color: var(--azul-electrico); /* Color azul eléctrico */
+}
+
+.flecha {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.flecha-img {
+    width: 50px; /* Ajusta el tamaño de la flecha */
+    height: auto; /* Mantiene la proporción de la imagen */
+    animation: subir-bajar 1s infinite; /* Efecto de subir y bajar */
+}
+
+@keyframes subir-bajar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
 /* Media queries */
 
 /* Pantallas pequeñas */
@@ -47,6 +123,28 @@ html, body {
     max-width: 100%;
 }
 
+#inicio {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.fecha-evento {
+    font-size: 18px;
+}
+
+.nombres {
+    font-size: 40px;
+}
+
+.frase-biblica {
+    font-size: 40px;
+}
+
+.flecha-img {
+    width: 30px;
+}
+
+
     }
 
 /* Pantallas medianas */
@@ -60,6 +158,27 @@ html, body {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
+    }
+   
+    #inicio {
+        width: 80%;
+        margin: 15px auto;
+    }
+    
+    .fecha-evento {
+        font-size: 22px;
+    }
+    
+    .nombres {
+        font-size: 50px;
+    }
+    
+    .frase-biblica {
+        font-size: 50px;
+    }
+    
+    .flecha-img {
+        width: 40px;
     }
 
 }
@@ -77,6 +196,27 @@ html, body {
         max-width: 100%;
     }
 
+    #inicio {
+        width: 70%;
+        margin: 20px auto;
+    }
+    
+    .fecha-evento {
+        font-size: 28px;
+    }
+    
+    .nombres {
+        font-size: 60px;
+    }
+    
+    .frase-biblica {
+        font-size: 60px;
+    }
+    
+    .flecha-img {
+        width: 50px;
+    }
+
 }
 
 /* Pantallas muy grandes */
@@ -90,6 +230,27 @@ html, body {
     html, body {
         overflow-x: hidden;
         max-width: 100%;
+    }
+
+    #inicio {
+        width: 60%;
+        margin: 25px auto;
+    }
+    
+    .fecha-evento {
+        font-size: 32px;
+    }
+    
+    .nombres {
+        font-size: 70px;
+    }
+    
+    .frase-biblica {
+        font-size: 70px;
+    }
+    
+    .flecha-img {
+        width: 60px;
     }
 
 }
