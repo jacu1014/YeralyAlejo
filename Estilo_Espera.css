@@ -12,13 +12,13 @@ body {
 }
 
 .imagen-espera {
-  width:15%;
+  width: 15%;
   height: 15%;
   animation: latido 1s infinite;
 }
 
 .imagen-espera_1 {
-  width:30%;
+  width: 30%;
   height: 45%;
   animation: latido 1s infinite;
 }
@@ -40,4 +40,40 @@ body {
   font-family: "Nunito", serif;
   font-size: 36px;
   margin-top: 36px;
+}
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .imagen-espera {
+    width: 25%;
+    height: 25%;
+  }
+  
+  .imagen-espera_1 {
+    width: 40%;
+    height: 60%;
+  }
+  
+  .texto-espera {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .imagen-espera {
+    width: 35%;
+    height: 35%;
+  }
+  
+  .imagen-espera_1 {
+    width: 50%;
+    height: 70%;
+  }
+  
+  .texto-espera {
+    font-size: 18px;
+    margin-top: 18px;
+  }
 }
