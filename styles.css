@@ -377,9 +377,9 @@ html, body {
 /*Tarjetas*/
 
 .contenedor-tarjetas {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto; /* Agrega esto */
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
   }
 
 .tarjeta {
@@ -475,9 +475,9 @@ html, body {
 
     /*Tarjeta*/
     .contenedor-tarjetas {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto; /* Agrega esto */
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
       }
     
     .tarjeta {
