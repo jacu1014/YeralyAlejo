@@ -29,9 +29,38 @@ body {
     }
 }
 
+/*Navegador*/
+
+nav {
+    background-color: var(--azul-electrico);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Frase*/
 /* Estilos de la sección de inicio */
 #inicio {
-    width: 90%; /* Establece el ancho de la sección al 70% */
+    width: 80%; /* Establece el ancho de la sección al 70% */
     margin: 20px auto; /* Centra la sección horizontalmente */
     text-align: center; /* Centra el contenido */
 }
@@ -95,37 +124,6 @@ body {
     100% { transform: translateY(0); }
 }
 
-/*Navegador*/
-
-nav {
-    background-color: var(--azul-electrico);
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Estilos de las secciones */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
 /* Estilos para pantalla grande (Desktop) */
 @media (min-width: 1200px) {
     body {
@@ -146,7 +144,7 @@ section {
         width: 90%;
         margin: 0 auto;
     }
-
+/*Frase*/
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas muy grandes */
         margin: 40px auto; /* Aumenta el espaciado superior e inferior */
@@ -202,6 +200,8 @@ section {
         width: 90%;
         margin: 0 auto;
     }
+
+    /*Frase*/
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas grandes */
         margin: 30px auto; /* Aumenta el espaciado superior e inferior */
@@ -259,7 +259,7 @@ section {
         width: 100%;
         margin: 0;
     }
-
+/*Frase*/
     #inicio {
         width: 80%; /* Ajusta el ancho para pantallas medianas */
         margin: 15px auto; /* Reduce el espaciado superior e inferior */
@@ -320,6 +320,7 @@ section {
         padding: 10px;
     }
 
+    /*Frase*/
     #inicio {
         width: 80%;; /* Ajusta el ancho para pantallas pequeñas */
         margin: 10px auto; /* Reduce el espaciado superior e inferior */
