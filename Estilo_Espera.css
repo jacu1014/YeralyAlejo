@@ -18,7 +18,7 @@ body {
 }
 
 .imagen-espera_1 {
-  max-width: 100%;
+  max-width: 25%;
   height: auto;
   animation: latido 1s infinite;
 }
@@ -50,7 +50,7 @@ body {
   }
   
   .imagen-espera_1 {
-    width: 60%;
+    width: 25%;
     height: auto;
   }
   
@@ -68,7 +68,7 @@ body {
   }
   
   .imagen-espera_1 {
-    width: 80%;
+    width: 25%;
     height: auto;
   }
   
