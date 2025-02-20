@@ -1,2 +1,2 @@
 # YeralyAlejo
-Pagina d einvitación matrimonio
+Pagina de invitación al matrimonio
