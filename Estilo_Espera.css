@@ -86,7 +86,7 @@ body {
   }
   
   .imagen-espera_1 {
-    max-width: 400px; /* Ajusta el ancho máximo aquí */
+    max-width: 45%; /* Ajusta el ancho máximo aquí */
     height: auto;
   }
 }
