@@ -38,9 +38,7 @@ body {
 .texto-espera {
   color: #fff;
   font-family: "Nunito", serif;
-  font-size: 36px;
-  margin-top: 36px;
-}
+ }
 
 /* Media query para pantallas grandes (más de 800px) */
 @media (min-width: 800px) {
