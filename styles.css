@@ -174,6 +174,144 @@ section {
     50% { transform: scale(1.2); }
 }
 
+/* Estilos para la sección de tarjetas */
+#links {
+    text-align: center;
+    width: 100%;
+    background: none; /* Quita el fondo */
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 30px;
+}
+
+/* Tarjetas Interactivas */
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.tarjeta-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg);
+}
+
+/* Lado Frontal */
+.tarjeta-front, .tarjeta-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: var(--blanco);
+}
+
+.tarjeta-front {
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 4px solid var(--azul-electrico);
+}
+
+.tarjeta-back {
+    background-color: rgba(40, 40, 40, 0.8);
+    color: var(--negro);
+    transform: rotateY(180deg);
+    border: 4px solid var(--azul-electrico);
+}
+
+/* Estilos del Título */
+.tarjeta-front h1 {
+    background-image: url('Fotos/Cinta.png');
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--azul-electrico);
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    padding: 30px 50px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    animation: wave 2s linear infinite;
+}
+
+/* Animación del título */
+@keyframes wave {
+    0% {
+        background-position: center;
+        transform: translateY(0);
+    }
+    50% {
+        background-position: calc(50% + 10px) center;
+        transform: translateY(-5px);
+    }
+    100% {
+        background-position: center;
+        transform: translateY(0);
+    }
+}
+
+/* Lado Posterior */
+.tarjeta-back h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: var(--azul-electrico);
+}
+
+.tarjeta-back p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: var(--blanco)
+}
+
+.tarjeta-back p strong {
+    color: var(--azul-electrico);
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: var(--azul-electrico);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: var(--celeste);
+}
+
+/* Iconos */
+.icono {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
 
 
 /* Media queries */
@@ -235,6 +373,28 @@ html, body {
     width: 20%;
 }
 
+.contenedor-tarjetas {
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 250px;
+}
+
+.tarjeta-front h1 {
+    font-size: 24px;
+    padding: 20px 30px;
+}
+
+.tarjeta-back h2 {
+    font-size: 20px;
+}
+
+.tarjeta-back p {
+    font-size: 14px;
+}
+
 
     }
 
@@ -292,6 +452,28 @@ html, body {
     
     #corazon {
         width: 25%;
+    }
+
+    .contenedor-tarjetas {
+        gap: 30px;
+    }
+    
+    .tarjeta {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .tarjeta-front h1 {
+        font-size: 28px;
+        padding: 25px 40px;
+    }
+    
+    .tarjeta-back h2 {
+        font-size: 24px;
+    }
+    
+    .tarjeta-back p {
+        font-size: 16px;
     }
 
 }
@@ -352,6 +534,28 @@ html, body {
         width: 30%;
     }
 
+    .contenedor-tarjetas {
+        gap: 40px;
+    }
+    
+    .tarjeta {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .tarjeta-front h1 {
+        font-size: 32px;
+        padding: 30px 50px;
+    }
+    
+    .tarjeta-back h2 {
+        font-size: 28px;
+    }
+    
+    .tarjeta-back p {
+        font-size: 18px;
+    }
+
 }
 
 /* Pantallas muy grandes */
@@ -408,6 +612,28 @@ html, body {
     
     #corazon {
         width: 35%;
+    }
+
+    .contenedor-tarjetas {
+        gap: 50px;
+    }
+    
+    .tarjeta {
+        width: 350px;
+        height: 400px;
+    }
+    
+    .tarjeta-front h1 {
+        font-size: 36px;
+        padding: 35px 60px;
+    }
+    
+    .tarjeta-back h2 {
+        font-size: 32px;
+    }
+    
+    .tarjeta-back p {
+        font-size: 20px;
     }
 
 }
