@@ -7,7 +7,7 @@
     --celeste: #66C2FF;
 }
 
-/* Estilos generales para todas las pantallas */
+/* Estilos generales */
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -15,6 +15,7 @@ body {
     background: var(--negro);
     animation: fondo-dinamico 10s infinite alternate;
     background-size: 100%;
+    animation: fondo-dinamico 6s infinite alternate; /* 3 segundos entre cada imagen */
 }
 
 /* Animación de fondo dinámico */
@@ -27,6 +28,34 @@ body {
         background-image: url('Fotos/Fondo_Index2.png');
         background-position: center;
     }
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: var(--azul-electrico);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos de la sección de inicio */
@@ -93,253 +122,6 @@ body {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
-}
-
-/*Navegador*/
-
-nav {
-    background-color: var(--azul-electrico);
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Estilos de las secciones */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/* Estilos para pantalla grande (Desktop) */
-@media (min-width: 1200px) {
-    body {
-        font-size: 18px;
-        background-size: 100% 100%;
-    }
-    .container {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    /*Navegador*/
-
-    nav ul {
-        justify-content: space-between;
-    }
-    section {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    #inicio {
-        width: 50%; /* Ajusta el ancho para pantallas muy grandes */
-        margin: 40px auto; /* Aumenta el espaciado superior e inferior */
-      }
-    
-      .fecha-evento {
-        font-size: 36px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .nombres {
-        font-size: 80px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .frase-biblica {
-        font-size: 60px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .flecha-img {
-        width: 80px; /* Aumenta el tamaño de la flecha */
-      }
-    
-      .fecha {
-        flex-direction: row; /* Restablece la dirección de la fecha */
-        justify-content: space-around; /* Distribuye la fecha de manera uniforme */
-      }
-    
-      .linea {
-        margin: 30px 0; /* Ajusta el espaciado entre las líneas */
-      }
-}
-
-/* Estilos para pantalla mediana (Tablet) */
-@media (min-width: 768px) and (max-width: 1199px) {
-    body {
-        font-size: 16px;
-        background-size: 100% 100%;
-    }
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /*Navegador*/
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        margin-bottom: 10px;
-    }
-    section {
-        width: 90%;
-        margin: 0 auto;
-    }
-    #inicio {
-        width: 60%; /* Ajusta el ancho para pantallas grandes */
-        margin: 30px auto; /* Aumenta el espaciado superior e inferior */
-      }
-    
-      .fecha-evento {
-        font-size: 30px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .nombres {
-        font-size: 70px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .frase-biblica {
-        font-size: 50px; /* Aumenta el tamaño de fuente */
-      }
-    
-      .flecha-img {
-        width: 60px; /* Aumenta el tamaño de la flecha */
-      }
-    
-      .fecha {
-        flex-direction: row; /* Restablece la dirección de la fecha */
-        justify-content: space-around; /* Distribuye la fecha de manera uniforme */
-      }
-    
-      .linea {
-        margin: 20px 0; /* Ajusta el espaciado entre las líneas */
-      }
-
-}
-
-/* Estilos para pantalla pequeña (Móvil) */
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-        background-size: 100% 100%;
-        animation: none;
-    }
-    .container {
-        width: 100%;
-        margin: 0;
-    }
-
-    /*Navegador*/
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        margin-bottom: 10px;
-    }
-    section {
-        width: 100%;
-        margin: 0;
-    }
-
-    #inicio {
-        width: 80%; /* Ajusta el ancho para pantallas medianas */
-        margin: 15px auto; /* Reduce el espaciado superior e inferior */
-      }
-    
-      .fecha-evento {
-        font-size: 24px; /* Reduce el tamaño de fuente */
-      }
-    
-      .nombres {
-        font-size: 50px; /* Reduce el tamaño de fuente */
-      }
-    
-      .frase-biblica {
-        font-size: 40px; /* Reduce el tamaño de fuente */
-      }
-    
-      .flecha-img {
-        width: 40px; /* Reduce el tamaño de la flecha */
-      }
-    
-      .fecha {
-        flex-direction: column; /* Cambia la dirección de la fecha */
-        align-items: center; /* Centra la fecha */
-      }
-    
-      .linea {
-        margin: 10px 0; /* Ajusta el espaciado entre las líneas */
-      }
-}
-
-/* Estilos para pantalla extra pequeña (Móvil pequeño) */
-@media (max-width: 479px) {
-    body {
-        font-size: 12px;
-        background-size: 100% 100%;
-        animation: none;
-    }
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    /*Navegador*/
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-    section {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-
-    #inicio {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        margin: 10px auto; /* Reduce el espaciado superior e inferior */
-      }
-    
-      .fecha-evento {
-        font-size: 20px; /* Reduce el tamaño de fuente */
-      }
-    
-      .nombres {
-        font-size: 40px; /* Reduce el tamaño de fuente */
-      }
-    
-      .frase-biblica {
-        font-size: 30px; /* Reduce el tamaño de fuente */
-      }
-    
-      .flecha-img {
-        width: 30px; /* Reduce el tamaño de la flecha */
-      }
 }
 
 /* Estilos de la galería de fotos */
