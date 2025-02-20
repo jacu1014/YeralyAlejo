@@ -376,6 +376,11 @@ html, body {
 
 /*Tarjetas*/
 
+#links {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
+}
 
     }
 
