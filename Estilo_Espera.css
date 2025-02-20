@@ -55,8 +55,8 @@ body {
 
   .texto-espera {
     font-family: "Nunito", serif;
-    font-size: 18px !important; /* Utiliza !important para forzar el cambio de tamaño */
-    margin-top: 18px;
+    font-size: 36px !important; /* Utiliza !important para forzar el cambio de tamaño */
+    margin-top: 36px;
   }
 }
 
