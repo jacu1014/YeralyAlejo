@@ -38,7 +38,7 @@ body {
 .texto-espera {
   color: #fff;
   font-family: "Nunito", serif;
-  font-size: 36px; /* Establece un tamaño de fuente por defecto */
+  font-size: 50px; /* Establece un tamaño de fuente por defecto */
  }
 
 /* Media query para pantallas grandes (más de 800px) */
@@ -55,8 +55,8 @@ body {
 
   .texto-espera {
     font-family: "Nunito", serif;
-    font-size: 36px !important; /* Utiliza !important para forzar el cambio de tamaño */
-    margin-top: 36px;
+    font-size: 50px !important; /* Utiliza !important para forzar el cambio de tamaño */
+    margin-top: 50px;
   }
 }
 
