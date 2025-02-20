@@ -379,7 +379,7 @@ html, body {
 .contenedor-tarjetas {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Agrega esto */
+    margin: 0 auto; /* Agrega esto */
   }
 
 .tarjeta {
@@ -477,7 +477,7 @@ html, body {
     .contenedor-tarjetas {
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start; /* Agrega esto */
+        margin: 0 auto; /* Agrega esto */
       }
     
     .tarjeta {
