@@ -380,6 +380,7 @@ html, body {
     text-align: center;
     width: 90%;
     justify-content: center;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
     
 }
 .contenedor-tarjetas {
