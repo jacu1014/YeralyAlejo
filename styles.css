@@ -148,7 +148,7 @@ section {
     }
 
     #inicio {
-        width: 50%; /* Ajusta el ancho para pantallas muy grandes */
+        width: 80%; /* Ajusta el ancho para pantallas muy grandes */
         margin: 40px auto; /* Aumenta el espaciado superior e inferior */
       }
     
