@@ -66,8 +66,8 @@ body {
   }
   
   .texto-espera {
-    font-size: 36px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
-    margin-top: 36px !important;
+    font-size: 28px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 28px !important;
   }
 }
 
@@ -84,7 +84,7 @@ body {
   }
   
   .texto-espera {
-    font-size: 36px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
-    margin-top: 36px !important;
+    font-size: 28px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 28px !important;
   }
 }
