@@ -379,16 +379,59 @@ html, body {
 #links {
     text-align: center;
     width: 100%;
+    background-color: rgba(30, 30, 30, 0.8); /* Color #1E1E1E con 80% de opacidad */
     
 }
 
 .contenedor-tarjetas {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px !important;
-    margin: -10px!important;
-}
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tarjeta {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    border: 4px solid var(--azul-electrico);
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tarjeta-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tarjeta-front, .tarjeta-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: var(--blanco);
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 4px solid var(--azul-electrico);
+  }
+  
+  .tarjeta-back {
+    transform: rotateY(180deg);
+  }
 
     }
 
