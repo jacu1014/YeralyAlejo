@@ -381,6 +381,8 @@ html, body {
 .tarjeta {
     width: 200px;
     height: 250px;
+    position: center;
+    margin-bottom: 50px;
 }
 
 .tarjeta-front h1 {
@@ -462,6 +464,8 @@ html, body {
     .tarjeta {
         width: 250px;
         height: 300px;
+        position: center;
+        margin-bottom: 50px;
     }
     
     .tarjeta-front h1 {
@@ -542,6 +546,7 @@ html, body {
     .tarjeta {
         width: 300px;
         height: 350px;
+        margin-right: 100px;
     }
     
     .tarjeta-front h1 {
@@ -622,6 +627,7 @@ html, body {
     .tarjeta {
         width: 350px;
         height: 400px;
+        margin-right: 100px;
     }
     
     .tarjeta-front h1 {
