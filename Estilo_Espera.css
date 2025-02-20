@@ -63,7 +63,7 @@ body {
 /* Media query para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
   .imagen-espera {
-    width: 70%;
+    width: 25%;
     height: auto;
   }
   
