@@ -31,7 +31,7 @@ body {
 
 /* Estilos de la sección de inicio */
 #inicio {
-    width: 70%; /* Establece el ancho de la sección al 70% */
+    width: 90%; /* Establece el ancho de la sección al 70% */
     margin: 20px auto; /* Centra la sección horizontalmente */
     text-align: center; /* Centra el contenido */
 }
@@ -143,7 +143,7 @@ section {
         justify-content: space-between;
     }
     section {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -203,7 +203,7 @@ section {
         margin: 0 auto;
     }
     #inicio {
-        width: 60%; /* Ajusta el ancho para pantallas grandes */
+        width: 80%; /* Ajusta el ancho para pantallas grandes */
         margin: 30px auto; /* Aumenta el espaciado superior e inferior */
       }
     
