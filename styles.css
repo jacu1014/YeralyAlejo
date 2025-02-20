@@ -26,7 +26,7 @@ body {
         background-position: center;
     }
     75%, 100% {
-        background-image: url('Fotos/Fondo_Index2.png');
+        background-image: url('Fotos/Fondo_Index2.jpg');
         background-position: center;
     }
 }
@@ -38,18 +38,28 @@ body {
     body {
         animation: fondo-dinamico 4s infinite alternate;
         background-size: 100%;
-        overflow-x: hidden;
+        
 }
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
     }
-}
 
 /* Pantallas medianas */
 @media (min-width: 480px) and (max-width: 767px) {
     body {
         animation: fondo-dinamico 6s infinite alternate;
         background-size: 100%;
-        overflow-x: hidden;
+        
     }
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
 }
 
 /* Pantallas grandes */
@@ -57,8 +67,13 @@ body {
     body {
         animation: fondo-dinamico 8s infinite alternate;
         background-size: 100%;
-        overflow-x: hidden;
+        
     }
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
 }
 
 /* Pantallas muy grandes */
@@ -66,6 +81,11 @@ body {
     body {
         animation: fondo-dinamico 10s infinite alternate;
         background-size: 100%;
-        overflow-x: hidden;
+         
     }
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
 }
