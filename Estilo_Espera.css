@@ -54,8 +54,8 @@ body {
   }
 
   .texto-espera {
-    font-size: 100px !important; /* Utiliza !important para forzar el cambio de tamaño */
-    margin-top: 100px;
+    font-size: 36px !important; /* Utiliza !important para forzar el cambio de tamaño */
+    margin-top: 36px;
   }
 }
 
