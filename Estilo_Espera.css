@@ -50,7 +50,7 @@ body {
   }
   
   .imagen-espera_1 {
-    max-width: 20%;
+    max-width: 35%;
     height: auto;
   }
   
@@ -68,7 +68,7 @@ body {
   }
   
   .imagen-espera_1 {
-    max-width: 25%;
+    max-width: 35%;
     height: auto;
   }
   
@@ -86,7 +86,7 @@ body {
   }
   
   .imagen-espera_1 {
-    max-width: 100px; /* Ajusta el ancho máximo aquí */
+    max-width: 400px; /* Ajusta el ancho máximo aquí */
     height: auto;
   }
 }
