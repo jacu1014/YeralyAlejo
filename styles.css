@@ -383,6 +383,7 @@ html, body {
     height: 250px;
     position: center;
     margin-bottom: 50px;
+    margin-left: -50px;
 }
 
 .tarjeta-front h1 {
@@ -466,6 +467,7 @@ html, body {
         height: 300px;
         position: center;
         margin-bottom: 50px;
+        margin-left: -50px;
     }
     
     .tarjeta-front h1 {
