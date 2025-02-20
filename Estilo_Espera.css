@@ -54,6 +54,7 @@ body {
   }
 
   .texto-espera {
+    font-family: "Nunito", serif;
     font-size: 18px !important; /* Utiliza !important para forzar el cambio de tamaño */
     margin-top: 18px;
   }
@@ -72,6 +73,7 @@ body {
   }
   
   .texto-espera {
+    font-family: "Nunito", serif;
     font-size: 28px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
     margin-top: 28px !important;
   }
@@ -90,6 +92,7 @@ body {
   }
   
   .texto-espera {
+    font-family: "Nunito", serif;
     font-size: 28px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
     margin-top: 28px !important;
   }
