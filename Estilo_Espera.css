@@ -53,8 +53,8 @@ body {
   }
 
   .texto-espera {
-    font-size: 100px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
-    margin-top: 100px !important;
+    font-size: 100px; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 100px;
   }
 }
 
