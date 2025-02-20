@@ -42,6 +42,19 @@ body {
   margin-top: 36px;
 }
 
+/* Media query para pantallas grandes (más de 800px) */
+@media (min-width: 800px) {
+  .imagen-espera {
+    max-width: 150px; /* Ajusta el ancho máximo aquí */
+    height: auto;
+  }
+  
+  .imagen-espera_1 {
+    max-width: 600px; /* Ajusta el ancho máximo aquí */
+    height: auto;
+  }
+}
+
 /* Media query para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
   .imagen-espera {
@@ -55,8 +68,8 @@ body {
   }
   
   .texto-espera {
-    font-size: 50px; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
-    margin-top: 50px;
+    font-size: 50px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 50px !important;
   }
 }
 
@@ -73,20 +86,7 @@ body {
   }
   
   .texto-espera {
-    font-size: 50px; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
-    margin-top: 50px;
-  }
-}
-
-/* Media query para pantallas grandes (más de 800px) */
-@media (min-width: 800px) {
-  .imagen-espera {
-    max-width: 150px; /* Ajusta el ancho máximo aquí */
-    height: auto;
-  }
-  
-  .imagen-espera_1 {
-    max-width: 600px; /* Ajusta el ancho máximo aquí */
-    height: auto;
+    font-size: 50px !important; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    margin-top: 50px !important;
   }
 }
