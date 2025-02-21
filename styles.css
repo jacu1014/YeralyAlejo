@@ -877,8 +877,9 @@ html, body {
   }
 
   .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
-    width: 30%;
-    margin: 10px;
+    width: auto; /* Cambia el ancho a auto */
+    padding: 10px 20px; /* Ajusta el padding */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
   }
 
 }
@@ -1008,7 +1009,8 @@ html, body {
       }
     
       .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
-        width: 20%;
-        margin: 10px;
+        width: auto; /* Cambia el ancho a auto */
+        padding: 10px 20px; /* Ajusta el padding */
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
       }
 }
