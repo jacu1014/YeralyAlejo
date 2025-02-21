@@ -854,7 +854,10 @@ html, body {
   }
 
   #fotos_titulo h3 {
+    color: var(--blanco);
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    font-weight: bold; /* Agrega negrilla */
   }
 
   /*Fotos*/
@@ -982,7 +985,10 @@ html, body {
       }
     
       #fotos_titulo h3 {
-        font-size: 22px;
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: bold; /* Agrega negrilla */
       }
 
       /*Fotos*/
