@@ -313,7 +313,43 @@ section {
     margin-right: 10px;
 }
 
+/*Titulo de las fotos*/
 
+#fotos_titulo {
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 4px solid rgba(0, 123, 255, 0.5);
+   width: 80%;
+    height: 10%;
+    margin: 0 auto; /* Centra el elemento */
+    text-align: center;
+  }
+  
+  #fotos_titulo h1 {
+    color: var(--azul-electrico);
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: bold; /* Agrega negrilla */
+  }
+  
+  #fotos_titulo .titulo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #fotos_titulo .imagen-lateral {
+    width: 7.5%; /* Ajusta el ancho de la imagen */
+    height: 7.5%; /* Ajusta el alto de la imagen */
+    margin: 0 20px; /* Ajusta el margen entre la imagen y el título */
+  }
+  
+  #fotos_titulo h3 {
+    color: var(--blanco);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold; /* Agrega negrilla */
+  }
+  
 
 /* Media queries */
 
@@ -421,9 +457,30 @@ html, body {
 
 .boton {
     padding: 10px 50px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
+/*Titulo fotos*/
+#fotos_titulo {
+    width: 90%;
+    height: 15%;
+    font-size: 14px;
+  }
+
+  #fotos_titulo h1 {
+    font-size: 24px;
+  }
+
+  #fotos_titulo .imagen-lateral {
+    width: 5%;
+    height: 5%;
+    margin: 0 10px;
+  }
+
+  #fotos_titulo h3 {
+    font-size: 16px;
+  }
+}
     }
 
 /* Pantallas medianas */
@@ -525,6 +582,26 @@ html, body {
         font-size: 16px;
     }
 
+    /*Titulo fotos*/
+    #fotos_titulo {
+        width: 80%;
+        height: 12%;
+        font-size: 16px;
+      }
+    
+      #fotos_titulo h1 {
+        font-size: 28px;
+      }
+    
+      #fotos_titulo .imagen-lateral {
+        width: 6%;
+        height: 6%;
+        margin: 0 15px;
+      }
+    
+      #fotos_titulo h3 {
+        font-size: 18px;
+      }
 }
 
 /* Pantallas grandes */
@@ -610,6 +687,26 @@ html, body {
         padding: 10px 50px;
         font-size: 18px;
     }
+/*Titulo fotos*/
+#fotos_titulo {
+    width: 70%;
+    height: 10%;
+    font-size: 18px;
+  }
+
+  #fotos_titulo h1 {
+    font-size: 32px;
+  }
+
+  #fotos_titulo .imagen-lateral {
+    width: 7.5%;
+    height: 7.5%;
+    margin: 0 20px;
+  }
+
+  #fotos_titulo h3 {
+    font-size: 20px;
+  }
 
 }
 
@@ -697,4 +794,24 @@ html, body {
         font-size: 18px;
     }
 
+    /*Titulo fotos*/
+    #fotos_titulo {
+        width: 60%;
+        height: 8%;
+        font-size: 20px;
+      }
+    
+      #fotos_titulo h1 {
+        font-size: 36px;
+      }
+    
+      #fotos_titulo .imagen-lateral {
+        width: 8%;
+        height: 8%;
+        margin: 0 25px;
+      }
+    
+      #fotos_titulo h3 {
+        font-size: 22px;
+      }
 }
