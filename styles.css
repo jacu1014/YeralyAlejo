@@ -589,24 +589,26 @@ html, body {
  
   /*Fotos*/
   .galeria-tarjeta {
-    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
 
   .foto-con-marco-tarjeta {
-    width: 100%;
+    display: inline-block;
+    width: 300px; /* Ajusta el ancho de la foto */
     height: 200px;
-    margin: 20px 0;
+    margin: 20px 10px;
   }
 
   .botones-tarjeta {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
-    width: 100%;
-    margin-bottom: 10px;
+    width: auto;
+    margin: 10px;
   }
-
 }
     
 
