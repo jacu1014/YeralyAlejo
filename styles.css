@@ -350,6 +350,111 @@ section {
     font-weight: bold; /* Agrega negrilla */
   }
   
+  /*Fotos */
+#fotos-tarjeta{
+    background: none;
+  }
+  
+  .galeria-tarjeta {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: -10px; /* Reduce el espacio entre imágenes a -10px */
+  }
+  
+  .foto-con-marco-tarjeta {
+    perspective: 1000px;
+    width: 300px; /* Se ajusta al nuevo tamaño */
+    height: 300px;
+    position: relative;
+    flex-shrink: 0;
+    margin: 0 -20px; /* Ajusta el margen entre imágenes */
+  }
+  
+  .foto-inner-tarjeta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .foto-con-marco-tarjeta:hover .foto-inner-tarjeta {
+    transform: rotateY(180deg);
+  }
+  
+  /* 🔹 Ajuste de ambas caras para que ocupen el mismo espacio */
+  .foto-front-tarjeta, .foto-back-tarjeta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 4px solid #007BFF; /* Borde azul eléctrico en ambos lados */
+    box-sizing: border-box; /* Asegura que el borde no afecte el tamaño */
+  }
+  
+  /* 🔹 Ajuste del tamaño de imagen */
+  .foto-front-tarjeta img,
+  .foto-back-tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; /* Para evitar que el borde azul desaparezca */
+  }
+  
+  /* 🔹 Ajuste de la parte trasera */
+  .foto-back-tarjeta {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: rotateY(180deg);
+  }
+  
+  /* Imagen opaca en la parte trasera */
+  .foto-back-tarjeta .opaca {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    position: absolute;
+  }
+  
+  /* 🔹 Ajuste del texto de la fecha */
+  .foto-back-tarjeta .fecha {
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Botones */
+  .botones-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
+    background-color: var(--azul-electrico);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .boton-izquierda-tarjeta:hover, .boton-derecha-tarjeta:hover {
+    background-color: var(--celeste);
+  }
+  
+  .giro-automatico .foto-inner-tarjeta {
+    transform: rotateY(180deg);
+    transition: transform 0.8s ease-in-out;
+  }
 
 /* Media queries */
 
@@ -480,6 +585,28 @@ html, body {
   #fotos_titulo h3 {
     font-size: 16px;
   }
+
+ 
+  /*Fotos*/
+  .galeria-tarjeta {
+    flex-direction: column;
+  }
+
+  .foto-con-marco-tarjeta {
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .botones-tarjeta {
+    flex-direction: column;
+  }
+
+  .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
 }
     
 
@@ -602,6 +729,28 @@ html, body {
       #fotos_titulo h3 {
         font-size: 18px;
       }
+
+      /*Fotos*/
+
+      .galeria-tarjeta {
+        flex-wrap: wrap;
+      }
+    
+      .foto-con-marco-tarjeta {
+        width: 45%;
+        height: 250px;
+        margin: 20px;
+      }
+    
+      .botones-tarjeta {
+        flex-direction: row;
+      }
+    
+      .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
+        width: 45%;
+        margin: 10px;
+      }
+
 }
 
 /* Pantallas grandes */
@@ -706,6 +855,27 @@ html, body {
 
   #fotos_titulo h3 {
     font-size: 20px;
+  }
+
+  /*Fotos*/
+
+  .galeria-tarjeta {
+    gap: -20px;
+  }
+
+  .foto-con-marco-tarjeta {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .botones-tarjeta {
+    flex-direction: row;
+  }
+
+  .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
+    width: 30%;
+    margin: 10px;
   }
 
 }
@@ -813,5 +983,26 @@ html, body {
     
       #fotos_titulo h3 {
         font-size: 22px;
+      }
+
+      /*Fotos*/
+
+      .galeria-tarjeta {
+        gap: -30px;
+      }
+    
+      .foto-con-marco-tarjeta {
+        width: 20%;
+        height: 350px;
+        margin: 20px;
+      }
+    
+      .botones-tarjeta {
+        flex-direction: row;
+      }
+    
+      .boton-izquierda-tarjeta, .boton-derecha-tarjeta {
+        width: 20%;
+        margin: 10px;
       }
 }
